@@ -63,28 +63,4 @@ set_time_limit(0);
 		    fclose($this->conn); 
 		} 
 	}
-	
-	/*
-$sms = new Sms();
-$numberSms=array("+393492977246"); 
-//sms text 
-$txt_sms="Prova"; 
-//sender name 
-$sender="CDS"; 
-
-if($sms->xConnect()) //if connected 
-{ 
-//Send an sms to all numbers of array "numberSms" 
-while(list ($key, $val) = each($numberSms)) 
-{ 
-$msg = $sms->SendSMS($txt_sms,$val,$sender); 
-if (strstr($msg,'+Ok')) echo "Sms sended<BR>"; 
-else echo "Sms not sended. $msg<BR>"; 
-} 
-$sms->xDisconnect(); 
-} 
-else 
-{ 
-echo "Failed: Could not connect - ".$sms->errno." - ".$sms->errstr ; 
-} */
 ?>
